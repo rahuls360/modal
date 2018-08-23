@@ -29,3 +29,20 @@ div#modal {
 #modal {
   display: none;
 }
+
+button {
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
+button#modal-button {
+  background-color: rgb(17, 192, 17);
+}
+
+button.close {
+  background-color: rgba(228, 3, 3, 0.795);
+}
