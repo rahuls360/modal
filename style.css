@@ -1,0 +1,26 @@
+.modal-header,
+.modal-body {
+  border-bottom: 1px solid grey;
+}
+
+.modal-footer {
+  padding-top: 10px;
+}
+
+.modal-bg {
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+div#modal {
+  max-width: 300px;
+  margin: auto;
+  position: relative;
+  background-color: #fff;
+  padding: 15px 30px;
+}

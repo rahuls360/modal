@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery Assignment</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <button id="modal-button">Open Modal</button>
+
+  <div class="modal-bg">
+  </div>
+  <div id="modal">
+    <div class="modal-header">
+      <h3>Modal Title goes here</h3>
+    </div>
+    <div class="modal-body">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est magnam incidunt nihil placeat officiis libero vero voluptas
+        eius quaerat, labore eos dolores blanditiis, ex iure accusantium alias et molestias culpa.</p>
+    </div>
+    <div class="modal-footer">
+      <button class="close">Close</button>
+    </div>
+  </div>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+  <script>
+    $(document).ready(function () {
+      $('.close').on('click', function () {
+        $('#modal').css('display', 'none');
+        $('.modal-bg').css('display', 'none');
+      });
+
+      $('#modal-button').on('click', function () {
+        $('#modal').css('display', 'block');
+        $('.modal-bg').css('display', 'block');
+      });
+    });
+  </script>
+</body>
+
+</html>
